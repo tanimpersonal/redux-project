@@ -6,7 +6,7 @@ export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
   async () => {
     const res = await axios.get(url);
-    console.log("🚀 ~ file: fakeDataSlice.js ~ line 9 ~ res", res);
+    return res.data;
   }
 );
 export const fakeDataSlice = createSlice({
