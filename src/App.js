@@ -1,10 +1,12 @@
+import { Route, Routes } from "react-router-dom";
 import "tw-elements";
+import Homepage from "./Components/Homepage/Homepage";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-sm font-bold underline">Hello world!</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Homepage></Homepage>}></Route>
+    </Routes>
   );
 }
 
