@@ -1,3 +1,5 @@
+import cartSlice from "../Components/Features/cart/cartSlice";
+
 const { configureStore } = require("@reduxjs/toolkit");
 const {
   default: fakeDataSlice,
@@ -6,6 +8,7 @@ const {
 const store = configureStore({
   reducer: {
     fakeData: fakeDataSlice,
+    cart: cartSlice,
   },
 });
 export default store;
